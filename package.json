@@ -1,0 +1,16 @@
+{
+  "name": "1031-capex-hero",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/compiler": "^4.0.0",
+    "@astrojs/partytown": "^2.1.5",
+    "@astrojs/telemetry": "^3.3.3",
+    "@shikijs/vscode-textmate": "^10.0.1",
+    "astro": "^5.16.6"
+  }
+}
