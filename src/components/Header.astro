@@ -19,13 +19,13 @@ const navigation = [
 
 <style>
   .site-header {
-    position: relative; z-index: 2; display: flex; align-items: center; gap: 32px;
-    width: min(1440px, calc(100% - 48px)); min-height: 64px; margin: 14px auto 0;
-    padding: 6px 14px 6px 22px; border: 1px solid rgba(255,255,255,.72);
+    position: relative; z-index: 2; display: flex; align-items: center; gap: clamp(18px, 2.5vw, 32px);
+    width: min(1440px, calc(100% - 48px)); min-height: 84px; margin: 14px auto 0;
+    padding: 10px 18px 10px 26px; border: 1px solid rgba(255,255,255,.72);
     border-radius: 999px; background: rgba(255,255,255,.96); box-shadow: 0 14px 34px rgba(4, 38, 95, .11);
   }
-  .brand { display: flex; align-items: center; flex: 1; min-width: 205px; }
-  .brand img { width: 150px; height: 48px; object-fit: contain; object-position: left center; }
+  .brand { display: flex; align-items: center; flex: 1; min-width: 120px; }
+  .brand img { height: 68px; width: auto; max-width: 200px; object-fit: contain; object-position: left center; }
   nav { display: flex; align-items: center; justify-content: center; gap: clamp(18px, 2vw, 37px); white-space: nowrap; }
   nav a { font-weight: 600; font-size: 13px; color: #08245a; transition: color .2s ease; }
   nav a:hover { color: #0072ce; }
@@ -34,5 +34,5 @@ const navigation = [
   .start:hover { background: #0568b4; }
   .start span { font-size: 18px; line-height: 1; }
   @media (max-width: 1050px) { nav { display: none; } .brand { flex: 1; } }
-  @media (max-width: 600px) { .site-header { width: calc(100% - 28px); min-height: 66px; margin-top: 14px; padding: 7px 9px 7px 18px; } .brand { min-width: 0; } .brand img { width: 137px; height: 44px; } .start { min-height: 43px; padding: 0 16px; font-size: 13px; } }
+  @media (max-width: 600px) { .site-header { width: calc(100% - 28px); min-height: 74px; margin-top: 14px; padding: 8px 12px 8px 18px; } .brand { min-width: 0; } .brand img { height: 56px; width: auto; max-width: 160px; } .start { min-height: 42px; padding: 0 16px; font-size: 13px; } }
 </style>
